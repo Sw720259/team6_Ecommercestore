@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Books | Bookstore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-family:arial;
+      font-size:20px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .search-filter {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .search-filter input {
+      padding: 8px;
+      width: 250px;
+      max-width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .book {
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .book:hover {
+      transform: scale(1.02);
+    }
+
+    .book img {
+      max-width: 100%;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .book h3 {
+      font-size: 1.1rem;
+      margin: 10px 0 5px;
+      color:green;
+      font-family:arial;
+      padding:30px;
+      font-size:30px;
+    }
+
+    .book p {
+      margin: 0 0 10px;
+      color: black;
+      font-family:arial;
+      padding:15px;
+      margin:15px;
+      font-size:15px;
+    }
+
+    button {
+      padding: 8px 12px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: Arial;
+      font-size:20px;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 10px;
+      margin-top: 40px;
+      font-family: Arial;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Amicart Bookstore</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explore Our Books</h2>
+    <div class="search-filter">
+      <input type="text" id="searchBox" placeholder="Search books..." onkeyup="filterBooks()">
+    </div>
+
+    <div class="book-list" id="bookList">
+      <!-- Book Cards -->
+      <div class="book">
+        <h3>The Lost Expedition</h3>
+        <img src="C:\Users\swath\Downloads\q.jpeg" alt="Lost Expedition book<">
+        <p>Author: Emily Johnson </p>
+        <button onclick="addToCart('The Lost Expedition<')">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Amicart Bookstore. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function addToCart(book) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push(book);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(book + " added to cart!");
+    }
+
+    function filterBooks() {
+      const query = document.getElementById("searchBox").value.toLowerCase();
+      const books = document.querySelectorAll(".book");
+
+      books.forEach(book => {
+        const title = book.querySelector("h3").innerText.toLowerCase();
+        const author = book.querySelector("p").innerText.toLowerCase();
+        book.style.display = (title.includes(query) || author.includes(query)) ? "block" : "none";
+      });
+    }
+  </script>
+</body>
+</html>
+
