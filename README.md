@@ -4,8 +4,9 @@
 This project is a simple ecommerce website built using HTML, CSS, and JavaScript.
 
 ## Features
-
-- Product listing
+  login
+  index
+- books listing
 - Add to cart
 - Checkout functionality
 
@@ -15,7 +16,7 @@ This project is a simple ecommerce website built using HTML, CSS, and JavaScript
 
 git clone https://github.com/Sw720259/team6_Ecommercestore.git
 
-2. Open `index.html` in your browser.
+2. Open `bookc.html` in your browser.
 
 ## Contributors
 
