@@ -5,6 +5,16 @@ A simple, responsive **Ecommerce Bookstore** built by **Team 6** using HTML, CSS
 
 ---
 
+## 📘 Project Description
+
+🖼️*Project Title:*  
+*Team 6 Ecommerce Store – Online Bookstore*
+
+*Objective:*  
+To create a fully responsive and user-friendly ecommerce website where users can browse books, add them to a cart, and proceed to a simulated checkout. The project focuses on frontend development using HTML, CSS, and JavaScript.
+
+---
+
 ## 📚 Features
 
 - 🔐 **User Login**: Basic login form to simulate user authentication.
@@ -36,34 +46,46 @@ git clone https://github.com/Sw720259/team6_Ecommercestore.git
 
 2. Open `books.html` in your browser.
 
-   
-- ## 👥 Contributors
+   ## 📂 Project Structure
+
+## 👥 Team Contributors
  Team 6 members
 - 👩‍💻 Swathi  
-  *Role:* books store 
-  *Repo:* [team6_Ecommercestore](https://github.com/Sw720259/team6_Ecommercestore)
+- books store 
+- [team6_Ecommercestore](https://github.com/Sw720259/team6_Ecommercestore)
 
 - 👨‍💻  PREETPAL SINGH
-  *Role:* Login page 
-  *Repo:* [team6_Ecommercestore](https://github.com/preetpalbugs/team6_EcommerceStore)
-  
-  - 👨‍💻   MAHESH R 
-  *Role:* Index Page
-  *Repo:* [team6_Ecommercestore](https://github.com/MAHESH0/team6_EcommerceStore)
+- Login page 
+- [team6_Ecommercestore](https://github.com/preetpalbugs/team6_EcommerceStore)
 
-  - 👩‍💻  ADWIT SINGH
-  *Role:* Cart page
-  *Repo:* [team6_Ecommercestore](https://github.com/adwit12/team6_Ecommercestore)
+- 👨‍💻   MAHESH R 
+- Index Page
+- [team6_Ecommercestore](https://github.com/MAHESH0/team6_EcommerceStore)
 
+- 👩‍💻  ADWIT SINGH
+- Cart page
+- [team6_Ecommercestore](https://github.com/adwit12/team6_Ecommercestore)
+
+
+## 🧠 Learning Outcomes
+
+- Built UI using HTML, CSS, JavaScript
+- Learned Git & GitHub collaboration
+- Implemented core ecommerce features like cart and checkout
+- Practiced responsive web design
+
+---
 ## 🖼️ Screenshots
 
 ### 📚 Book Listing
-<img src="C:\Users\swath\OneDrive\Pictures\Screenshots\Screenshot 2025-05-20 193936.png">
-<img src="C:\Users\swath\OneDrive\Pictures\Screenshots\Screenshot 2025-05-20 193958.png">
-<img src="C:\Users\swath\OneDrive\Pictures\Screenshots\Screenshot 2025-05-20 194155.png">
+![Books Page](screenshots/Screenshot_2025-05-20_193936.png)
+---
 
 
-## License
+## 📄 License
 
-This project is licensed under the MIT License.
+This project is open-source and licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
 
